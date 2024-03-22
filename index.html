@@ -18,7 +18,17 @@ $img.onpointermove = function(event){
         this.setPointerCapture(event.pointerId)
     }
 }
+
 </script>
+
+<p id="fc01" style="cursor: pointer;">ダイアログを表示する</p>
+<script>
+document.getElementById('fc01').addEventListener('click', function() {
+    var str = "ダイアログがクリックされました";
+    alert(str);
+});
+</script>
+
     
 </body>
 </html>
