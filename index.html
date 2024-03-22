@@ -4,33 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <h1>4676_test1 git</h1>
-    <div style="width:40px; height: 40px;">
-        <img id="$img" src="https://js.cx/clipart/ball.svg" width="40" height="40">
+    <div id="particles-js"></div>
+
+    <!--wrapper-->
+    <div id="wrapper">
+        <p>コンテンツが入ります</p>
     </div>
+    <!--/wrapper-->
+
+
+
 <script>
-$img.onpointermove = function(event){
-    if(event.buttons){
-        this.style.left     = this.offsetLeft + event.movementX + 'px'
-        this.style.top      = this.offsetTop  + event.movementY + 'px'
-        this.style.position = 'absolute'
-        this.draggable      = false
-        this.setPointerCapture(event.pointerId)
-    }
-}
-
-</script>
-
-<p id="fc01" style="cursor: pointer;">ダイアログを表示する</p>
-<script>
-document.getElementById('fc01').addEventListener('click', function() {
-    var str = "ダイアログがクリックされました";
-    alert(str);
-});
-</script>
-
-    
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
